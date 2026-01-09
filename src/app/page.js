@@ -1,7 +1,7 @@
 'use client';
 
-import { useState } from 'react';
-import Image from "next/image";
+import React, { useState } from 'react';
+import Image from 'next/image';
 
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -16,10 +16,10 @@ export default function Home() {
             {/* Logo */}
             <div className="flex items-center">
               <div className="w-48 h-48 flex items-center justify-center overflow-hidden">
-                <Image 
-                  src="/New logo.png" 
-                  alt="Shreem Software Solutions" 
-                  width={200} 
+                <Image
+                  src="/New logo.png"
+                  alt="Shreem Software Solutions"
+                  width={200}
                   height={200}
                   className="object-contain"
                 />
@@ -34,27 +34,27 @@ export default function Home() {
               <a href="#about" className="text-gray-700 hover:text-blue-600 px-4 py-2 rounded-lg hover:bg-blue-50 transition-all duration-300 font-medium">About Us</a>
               <a href="#faq" className="text-gray-700 hover:text-blue-600 px-4 py-2 rounded-lg hover:bg-blue-50 transition-all duration-300 font-medium">FAQ</a>
               <a href="#contact" className="text-gray-700 hover:text-blue-600 px-4 py-2 rounded-lg hover:bg-blue-50 transition-all duration-300 font-medium">Contact</a>
-              
+
               {/* CTA Button */}
-              <button 
+              <button
                 onClick={() => window.open('https://wa.me/916263662870?text=Hi%20Shreem%20Software%20Solutions,%20I%20am%20interested%20in%20your%20school%20management%20software%20trial.', '_blank')}
                 className="ml-4 bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white px-6 py-2 rounded-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 cursor-pointer"
               >
                 Start Free Trial
               </button>
             </nav>
-            
+
 
             {/* Mobile menu button */}
             <div className="md:hidden flex items-center space-x-3">
               {/* Mobile CTA Button */}
-              <button 
+              <button
                 onClick={() => window.open('https://wa.me/916263662870?text=Hi%20Shreem%20Software%20Solutions,%20I%20am%20interested%20in%20your%20school%20management%20software%20trial.', '_blank')}
                 className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white px-4 py-2 rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 cursor-pointer"
               >
                 Trial
               </button>
-              
+
               <button
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                 className="text-gray-700 hover:text-blue-600 p-2 rounded-lg hover:bg-blue-50 transition-all duration-300"
@@ -80,10 +80,10 @@ export default function Home() {
                 <a href="#about" className="block text-gray-700 hover:text-blue-600 px-4 py-3 rounded-lg hover:bg-blue-50 transition-all duration-300 font-medium">About Us</a>
                 <a href="#faq" className="block text-gray-700 hover:text-blue-600 px-4 py-3 rounded-lg hover:bg-blue-50 transition-all duration-300 font-medium">FAQ</a>
                 <a href="#contact" className="block text-gray-700 hover:text-blue-600 px-4 py-3 rounded-lg hover:bg-blue-50 transition-all duration-300 font-medium">Contact</a>
-                
+
                 {/* Mobile CTA Button */}
                 <div className="pt-3 border-t border-gray-100">
-                  <button 
+                  <button
                     onClick={() => window.open('https://wa.me/916263662870?text=Hi%20Shreem%20Software%20Solutions,%20I%20am%20interested%20in%20your%20school%20management%20software%20trial.', '_blank')}
                     className="w-full bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 cursor-pointer"
                   >
@@ -92,7 +92,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          )}  
+          )}
         </div>
       </header>
 
@@ -110,67 +110,67 @@ export default function Home() {
             )`
           }}></div>
         </div>
-        
+
         {/* Large Background Elements */}
         <div className="absolute top-0 left-0 w-64 h-64 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full opacity-10 blur-3xl transform -translate-x-1/2 -translate-y-1/2"></div>
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full opacity-10 blur-3xl transform translate-x-1/2 translate-y-1/2"></div>
         <div className="absolute top-1/2 left-1/2 w-80 h-80 bg-gradient-to-br from-green-400 to-green-600 rounded-full opacity-5 blur-3xl transform -translate-x-1/2 -translate-y-1/2"></div>
-        
+
         {/* Floating School Icons with Better Design */}
         <div className="absolute top-10 left-10 w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center shadow-xl animate-pulse transform rotate-12 hover:rotate-0 transition-transform duration-500">
           <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
           </svg>
         </div>
-        
+
         <div className="absolute top-20 right-20 w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center shadow-xl animate-bounce transform -rotate-12 hover:rotate-0 transition-transform duration-500">
           <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
           </svg>
         </div>
-        
+
         <div className="absolute bottom-20 left-20 w-18 h-18 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center shadow-xl animate-pulse transform rotate-6 hover:rotate-0 transition-transform duration-500">
           <svg className="w-9 h-9 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
           </svg>
         </div>
-        
+
         <div className="absolute bottom-10 right-10 w-14 h-14 bg-gradient-to-br from-yellow-500 to-orange-600 rounded-2xl flex items-center justify-center shadow-xl animate-bounce transform -rotate-6 hover:rotate-0 transition-transform duration-500">
           <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l9-5-9-5-9 5 9 5z" />
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
           </svg>
         </div>
-        
+
         {/* Additional School Elements */}
         <div className="absolute top-1/3 right-1/4 w-12 h-12 bg-gradient-to-br from-red-500 to-pink-600 rounded-2xl flex items-center justify-center shadow-xl animate-pulse transform rotate-45 hover:rotate-0 transition-transform duration-500">
           <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
           </svg>
         </div>
-        
+
         {/* <div className="absolute bottom-1/3 left-1/4 w-10 h-10 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-2xl flex items-center justify-center shadow-xl animate-bounce transform -rotate-45 hover:rotate-0 transition-transform duration-500">
           <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
           </svg>
         </div> */}
-        
+
         {/* Decorative Dots Pattern */}
         <div className="absolute top-1/4 left-1/6 w-2 h-2 bg-blue-400 rounded-full opacity-30 animate-pulse"></div>
         <div className="absolute top-1/4 left-1/5 w-3 h-3 bg-purple-400 rounded-full opacity-20 animate-pulse delay-100"></div>
         <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-green-400 rounded-full opacity-25 animate-pulse delay-200"></div>
-        
+
         <div className="absolute bottom-1/4 right-1/6 w-2 h-2 bg-yellow-400 rounded-full opacity-30 animate-pulse"></div>
         <div className="absolute bottom-1/4 right-1/5 w-3 h-3 bg-red-400 rounded-full opacity-20 animate-pulse delay-100"></div>
         <div className="absolute bottom-1/4 right-1/4 w-2 h-2 bg-indigo-400 rounded-full opacity-25 animate-pulse delay-200"></div>
-        
+
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
             <div className="text-center lg:text-left">
               <h1 className="text-4xl md:text-6xl font-bold font-poppins text-gray-900 mb-6 leading-tight tracking-tight">
                 <span className="block mb-2">Shreem Software Solutions</span>
-               
+
               </h1>
               <h2 className="text-2xl md:text-4xl font-semibold font-poppins text-blue-600 mb-8 tracking-wide">
                 School Management Software
@@ -182,13 +182,13 @@ export default function Home() {
                 We understand that managing a school isn't just about administration—it's about nurturing young minds. That's why we've built a platform that handles the paperwork so you can focus on what truly matters: education.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <button 
+                <button
                   onClick={() => window.open('https://wa.me/916263662870?text=Hi%20Shreem%20Software%20Solutions,%20I%20am%20interested%20in%20your%20school%20management%20software%20trial.', '_blank')}
                   className="bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-poppins font-semibold hover:bg-blue-700 transition-colors btn-animate cursor-pointer tracking-wide"
                 >
                   Explore Features
                 </button>
-                <button 
+                <button
                   onClick={() => window.open('https://wa.me/916263662870?text=Hi%20Shreem%20Software%20Solutions,%20I%20am%20interested%20in%20your%20school%20management%20software%20trial.', '_blank')}
                   className="bg-green-600 text-white px-8 py-4 rounded-lg text-lg font-poppins font-semibold hover:bg-green-700 transition-colors btn-animate cursor-pointer tracking-wide"
                 >
@@ -196,18 +196,123 @@ export default function Home() {
                 </button>
               </div>
             </div>
-            
+
             {/* Right Image */}
             <div className="flex justify-center lg:justify-end">
               <div className="relative font-sans">
-                <img 
-                  src="/image1.png" 
-                  alt="School Management Software Dashboard" 
+                <img
+                  src="/image1.png"
+                  alt="School Management Software Dashboard"
                   className="w-full max-w-lg rounded-2xl border-2 border-gray-200 shadow-2xl hover:shadow-3xl transition-all duration-300"
                 />
                 <div className="absolute -bottom-4 -right-4 bg-blue-600 text-white px-4 py-2 rounded-lg font-semibold shadow-lg">
                   Complete School Solution
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Mobile App Showcase Section */}
+      <section className="py-20 bg-gradient-to-br from-gray-50 to-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Left Content - App Features */}
+            <div className="text-center lg:text-left">
+              <h2 className="text-3xl md:text-4xl font-poppins font-bold text-gray-900 mb-6 relative">
+                Parent Mobile App
+                <span className="absolute left-0 -bottom-2 w-20 h-1 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full"></span>
+              </h2>
+              <p className="text-lg text-gray-600 mb-8 leading-relaxed font-plus-jakarta-sans">
+                We provide a dedicated mobile application for parents, giving you real-time access to your child's educational journey. Stay connected with their school life like never before.
+              </p>
+
+              <div className="space-y-6">
+
+                {/* Real-Time Updates */}
+                <div className="flex items-start space-x-4">
+                  <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-poppins font-semibold text-gray-900 mb-2">
+                      Real-Time Updates
+                    </h3>
+                    <p className="text-gray-600 font-plus-jakarta-sans">
+                      Get instant notifications about your child's attendance, grades, and school activities directly on your phone.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Direct Communication */}
+                <div className="flex items-start space-x-4">
+                  <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 8h10M7 12h6m5 8l-4-4H5a2 2 0 01-2-2V7a2 2 0 012-2h14a2 2 0 012 2v7a2 2 0 01-2 2z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-poppins font-semibold text-gray-900 mb-2">
+                      Direct Communication
+                    </h3>
+                    <p className="text-gray-600 font-plus-jakarta-sans">
+                      Message teachers and staff directly through the app. No more waiting for meetings or phone calls.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Progress Tracking */}
+                <div className="flex items-start space-x-4">
+                  <div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <svg className="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 17l6-6 4 4 8-8M14 7h7v7" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-poppins font-semibold text-gray-900 mb-2">
+                      Progress Tracking
+                    </h3>
+                    <p className="text-gray-600 font-plus-jakarta-sans">
+                      Monitor your child's academic progress, attendance patterns, and achievements all in one place.
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+            {/* Right Content - Mobile App Image */}
+            <div className="relative">
+              <div className="relative z-10">
+                {/* Mobile App Mockup */}
+                <div className="relative mx-auto" style={{ maxWidth: '500px', height: '600px' }}>
+                  <img
+                    src="/mobile-app.png"
+                    alt="Parent Mobile App Mockup"
+                    className="w-full h-full"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-transparent via-transparent to-white opacity-10 pointer-events-none"></div>
+                </div>
+
+                {/* Floating Elements */}
+                {/* Notification / Alerts */}
+                <div className="absolute -top-4 -right-4 w-20 h-20 bg-gradient-to-br from-blue-400 to-blue-600 rounded-2xl flex items-center justify-center shadow-xl animate-pulse">
+                  <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6 6 0 10-12 0v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0a3 3 0 11-6 0" />
+                  </svg>
+                </div>
+
+                {/* Attendance / Success */}
+                <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-gradient-to-br from-green-400 to-green-600 rounded-2xl flex items-center justify-center shadow-xl animate-bounce">
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m7 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+
               </div>
             </div>
           </div>
@@ -267,7 +372,7 @@ export default function Home() {
               <p className="text-lg font-medium text-gray-800">AI Attendance</p>
             </div>
 
-        
+
 
             <div className="flex items-center bg-gray-50 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow duration-300 border border-gray-200">
               <div className="flex-shrink-0 mr-4">
@@ -379,7 +484,7 @@ export default function Home() {
               <p className="text-lg font-medium text-gray-800">SMS & Email Alerts</p>
             </div>
 
-           
+
 
             <div className="flex items-center bg-gray-50 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow duration-300 border border-gray-200">
               <div className="flex-shrink-0 mr-4">
@@ -424,7 +529,7 @@ export default function Home() {
               </div>
               <p className="text-lg font-medium text-gray-800">Parent App</p>
               <span className="absolute top-2 right-2 bg-orange-500 text-white text-xs px-2 py-1 rounded-full font-semibold">
-                New 
+                New
               </span>
             </div>
 
@@ -472,8 +577,8 @@ export default function Home() {
               <p className="text-lg font-medium text-gray-800">Custom Integrations</p>
             </div>
           </div>
-          
-        
+
+
         </div>
       </section>
 
@@ -554,7 +659,7 @@ export default function Home() {
                     <span className="text-gray-700 font-medium">40+ Premium Features</span>
                   </li>
                 </ul>
-                <button 
+                <button
                   onClick={() => window.open('https://wa.me/916263662870?text=Hi%20Shreem%20Software%20Solutions,%20I%20am%20interested%20in%20your%20school%20management%20software%20trial.', '_blank')}
                   className="w-full bg-blue-600 text-white py-4 rounded-xl font-semibold hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 shadow-lg cursor-pointer"
                 >
@@ -717,7 +822,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          
+
           <div className="text-center mt-16">
             <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Why Choose Shreem Software Solutions?</h3>
@@ -731,7 +836,7 @@ export default function Home() {
                   <h4 className="text-lg font-semibold text-gray-900 mb-2">No Hidden Fees</h4>
                   <p className="text-gray-600">Transparent pricing with no surprises</p>
                 </div>
-                
+
                 <div className="text-center">
                   <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -741,7 +846,7 @@ export default function Home() {
                   <h4 className="text-lg font-semibold text-gray-900 mb-2">Affordable Price</h4>
                   <p className="text-gray-600">Budget-friendly solutions for schools</p>
                 </div>
-                
+
                 <div className="text-center">
                   <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <svg className="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -752,9 +857,9 @@ export default function Home() {
                   <h4 className="text-lg font-semibold text-gray-900 mb-2">Easy to Manage Admin Panel</h4>
                   <p className="text-gray-600">User-friendly interface for administrators</p>
                 </div>
-                
-              
-                
+
+
+
                 <div className="text-center">
                   <div className="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <svg className="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -764,7 +869,7 @@ export default function Home() {
                   <h4 className="text-lg font-semibold text-gray-900 mb-2">Data Security</h4>
                   <p className="text-gray-600">Enterprise-grade protection</p>
                 </div>
-                
+
                 <div className="text-center">
                   <div className="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <svg className="w-8 h-8 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -781,7 +886,7 @@ export default function Home() {
       </section>
 
       {/* Key Features Section */}
-      <section  className="py-20 bg-gradient-to-br from-blue-50 via-white to-purple-50">
+      <section className="py-20 bg-gradient-to-br from-blue-50 via-white to-purple-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 relative">
@@ -792,7 +897,7 @@ export default function Home() {
               Powerful tools designed to streamline school management and enhance educational experience
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* School Website */}
             <div className="group bg-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-blue-200">
@@ -803,7 +908,7 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">School Website</h3>
               <p className="text-gray-600 leading-relaxed">
-              Every school deserves a beautiful website that actually works. We'll set you up with a professional site that parents will love—no tech skills required. Update announcements, share achievements, and show off what makes your school special, 24/7.
+                Every school deserves a beautiful website that actually works. We'll set you up with a professional site that parents will love—no tech skills required. Update announcements, share achievements, and show off what makes your school special, 24/7.
               </p>
             </div>
 
@@ -816,7 +921,7 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Smart Dashboard</h3>
               <p className="text-gray-600 leading-relaxed">
-              Remember juggling a dozen different spreadsheets? Yeah, we hate that too. Our smart dashboard puts everything—students, teachers, grades, attendance—all in one place. It's like having a super-organized assistant who never sleeps.
+                Remember juggling a dozen different spreadsheets? Yeah, we hate that too. Our smart dashboard puts everything—students, teachers, grades, attendance—all in one place. It's like having a super-organized assistant who never sleeps.
               </p>
             </div>
 
@@ -829,7 +934,7 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Academic Calendar</h3>
               <p className="text-gray-600 leading-relaxed">
-              No more "Wait, when was that exam again?" Our calendar keeps everyone in the loop about tests, holidays, and school events. Parents get automatic reminders, so you can stop answering the same questions over and over (we know you do it with a smile, but still).
+                No more "Wait, when was that exam again?" Our calendar keeps everyone in the loop about tests, holidays, and school events. Parents get automatic reminders, so you can stop answering the same questions over and over (we know you do it with a smile, but still).
               </p>
             </div>
 
@@ -842,7 +947,7 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Holidays Management</h3>
               <p className="text-gray-600 leading-relaxed">
-              Planning holidays shouldn't feel like solving a puzzle. Our system makes it easy to schedule breaks, manage leave requests, and keep everything running smoothly. Less admin work, more time for what matters—like planning that next school trip!
+                Planning holidays shouldn't feel like solving a puzzle. Our system makes it easy to schedule breaks, manage leave requests, and keep everything running smoothly. Less admin work, more time for what matters—like planning that next school trip!
               </p>
             </div>
 
@@ -855,7 +960,7 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Fees & Payments Management</h3>
               <p className="text-gray-600 leading-relaxed">
-              Chasing parents for fees? We've been there. Our system makes collecting payments actually pleasant (yes, really!). Parents can pay online anytime, get automatic reminders, and you get real-time updates. No more awkward conversations at pickup time.
+                Chasing parents for fees? We've been there. Our system makes collecting payments actually pleasant (yes, really!). Parents can pay online anytime, get automatic reminders, and you get real-time updates. No more awkward conversations at pickup time.
               </p>
             </div>
 
@@ -868,7 +973,7 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Digital Attendance</h3>
               <p className="text-gray-600 leading-relaxed">
-              Attendance doesn't have to be a morning headache. Our digital system works with biometrics, facial recognition, or just plain old manual entry. Parents get instant notifications if their child is absent—no more "I swear I dropped them off!" confusion.
+                Attendance doesn't have to be a morning headache. Our digital system works with biometrics, facial recognition, or just plain old manual entry. Parents get instant notifications if their child is absent—no more "I swear I dropped them off!" confusion.
               </p>
             </div>
 
@@ -881,7 +986,7 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Parent Portal</h3>
               <p className="text-gray-600 leading-relaxed">
-              Parents want to be involved, but they're busy too. Our portal lets them check homework, track attendance, see grades, and message teachers—all from their phone. Happy parents mean fewer parent-teacher conferences about "How's my kid doing?"
+                Parents want to be involved, but they're busy too. Our portal lets them check homework, track attendance, see grades, and message teachers—all from their phone. Happy parents mean fewer parent-teacher conferences about "How's my kid doing?"
               </p>
             </div>
 
@@ -894,11 +999,11 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Result Management</h3>
               <p className="text-gray-600 leading-relaxed">
-              Grade calculations shouldn't require a calculator and three cups of coffee. Our system handles everything automatically—grades, report cards, progress reports. Teachers get their weekends back, and parents get clear insights into how their child is really doing.
+                Grade calculations shouldn't require a calculator and three cups of coffee. Our system handles everything automatically—grades, report cards, progress reports. Teachers get their weekends back, and parents get clear insights into how their child is really doing.
               </p>
             </div>
           </div>
-          
+
           <div className="text-center mt-12">
             <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 text-white shadow-xl">
               <h3 className="text-2xl font-bold mb-4">Ready to Actually Enjoy School Management?</h3>
@@ -930,7 +1035,7 @@ export default function Home() {
               Empowering educational institutions with innovative technology solutions since 2020
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Why Choose Shreem Software Solutions?</h3>
@@ -941,7 +1046,7 @@ export default function Home() {
                 Our platform isn't just another piece of software—it's your partner in education. We've spent countless hours talking to school administrators, teachers, and parents to understand what really matters. The result? A system that works the way you do, not the other way around.
               </p>
             </div>
-            
+
             <div className="order-1 lg:order-2">
               <div className="relative">
                 <div className="bg-gradient-to-br from-blue-100 to-purple-100 rounded-2xl p-8 shadow-xl">
@@ -957,7 +1062,7 @@ export default function Home() {
                         <p className="text-gray-600">We know school budgets are tight. That's why our plans start at just ₹1900/month—no hidden fees, no surprises. Just honest pricing for great software.</p>
                       </div>
                     </div>
-                    
+
                     <div className="flex items-center space-x-4">
                       <div className="w-14 h-14 bg-white rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
                         <svg className="w-7 h-7 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -970,7 +1075,7 @@ export default function Home() {
                         <p className="text-gray-600">No complicated manuals or IT degree required. Our dashboard is designed for real people—intuitive, clean, and actually enjoyable to use.</p>
                       </div>
                     </div>
-                    
+
                     <div className="flex items-center space-x-4">
                       <div className="w-14 h-14 bg-white rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
                         <svg className="w-7 h-7 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1003,7 +1108,7 @@ export default function Home() {
               We're pretty transparent about what we do. Here are some questions we hear all the time from folks just like you.
             </p>
           </div>
-          
+
           <div className="space-y-4">
             {[
               {
@@ -1056,7 +1161,7 @@ export default function Home() {
                     </svg>
                   </div>
                 </button>
-                
+
                 <div className={`overflow-hidden transition-all duration-300 ${expandedFaq === faq.id ? 'max-h-96' : 'max-h-0'}`}>
                   <div className="px-6 pb-4">
                     <div className="pl-11">
@@ -1067,7 +1172,7 @@ export default function Home() {
               </div>
             ))}
           </div>
-          
+
           <div className="text-center mt-12">
             <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-200">
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Still curious about something?</h3>
@@ -1096,7 +1201,7 @@ export default function Home() {
               Have questions? We're here to help! Reach out to us through any of these channels.
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
             {/* Phone Contact */}
             <div className="bg-white rounded-2xl p-4 sm:p-6 lg:p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-blue-200 transform hover:-translate-y-1">
@@ -1109,7 +1214,7 @@ export default function Home() {
               <div className="space-y-2">
                 <p className="text-gray-600 font-medium">+91 6263662870</p>
               </div>
-              <button 
+              <button
                 onClick={() => window.open('https://wa.me/916263662870?text=Hi%20Shreem%20Software%20Solutions,%20I%20am%20interested%20in%20your%20school%20management%20software%20trial.', '_blank')}
                 className="mt-4 text-blue-600 hover:text-blue-700 font-medium text-sm flex items-center justify-center cursor-pointer"
               >
@@ -1131,7 +1236,7 @@ export default function Home() {
               <div className="space-y-2">
                 <p className="text-gray-600 font-medium">shyam8patidar@gmail.com</p>
               </div>
-              <button 
+              <button
                 onClick={() => window.open('https://wa.me/916263662870?text=Hi%20Shreem%20Software%20Solutions,%20I%20am%20interested%20in%20your%20school%20management%20software%20trial.', '_blank')}
                 className="mt-4 text-green-600 hover:text-green-700 font-medium text-sm flex items-center justify-center cursor-pointer"
               >
@@ -1185,7 +1290,7 @@ export default function Home() {
               </button>
             </div>
           </div>
-          
+
           {/* Contact Form */}
           <div className="mt-16 bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
             <div className="max-w-2xl mx-auto">
@@ -1210,7 +1315,7 @@ export default function Home() {
                   <textarea rows="5" className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors resize-none" placeholder="Tell us more about your needs..." required></textarea>
                 </div>
                 <div className="text-center">
-                  <button 
+                  <button
                     type="button"
                     onClick={() => window.open('https://wa.me/916263662870?text=Hi%20Shreem%20Software%20Solutions,%20I%20am%20interested%20in%20your%20school%20management%20software%20trial.', '_blank')}
                     className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-8 py-4 rounded-xl font-semibold hover:from-blue-700 hover:to-blue-800 transition-all duration-300 transform hover:scale-105 shadow-lg cursor-pointer"
@@ -1238,24 +1343,24 @@ export default function Home() {
             )`
           }}></div>
         </div>
-        
+
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
             {/* Company Info */}
             <div className="space-y-6">
               <div className="flex items-center space-x-4 ">
                 <div className="w-48 h-20 bg-white rounded-xl flex items-center justify-center overflow-hidden shadow-lg px-3">
-                  <Image 
-                    src="/New logo.png" 
-                    alt="Shreem Software Solutions" 
-                    width={200} 
+                  <Image
+                    src="/New logo.png"
+                    alt="Shreem Software Solutions"
+                    width={200}
                     height={200}
                     className="object-contain"
                   />
                 </div>
               </div>
               <p className="text-gray-300 leading-relaxed font-plus-jakarta-sans">Empowering educational institutions with cutting-edge school management technology since 2025.</p>
-              
+
               {/* Website Link */}
               <div className="flex items-center group">
                 <div className="w-8 h-8 bg-blue-600/20 rounded-lg flex items-center justify-center mr-3 group-hover:bg-blue-600/30 transition-colors">
@@ -1263,16 +1368,16 @@ export default function Home() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
                   </svg>
                 </div>
-                <a 
-                  href="https://www.shreemsoftwaresolutions.com/" 
-                  target="_blank" 
+                <a
+                  href="https://www.shreemsoftwaresolutions.com/"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-300 text-sm group-hover:text-white transition-colors hover:underline"
                 >
                   www.shreemsoftwaresolutions.com
                 </a>
               </div>
-              
+
               <div className="space-y-3">
                 <div className="flex items-center group">
                   <div className="w-8 h-8 bg-blue-600/20 rounded-lg flex items-center justify-center mr-3 group-hover:bg-blue-600/30 transition-colors">
@@ -1282,7 +1387,7 @@ export default function Home() {
                   </div>
                   <span className="text-gray-300 text-sm group-hover:text-white transition-colors">+91 6263662870</span>
                 </div>
-                
+
                 <div className="flex items-center group">
                   <div className="w-8 h-8 bg-green-600/20 rounded-lg flex items-center justify-center mr-3 group-hover:bg-green-600/30 transition-colors">
                     <svg className="w-4 h-4 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1291,7 +1396,7 @@ export default function Home() {
                   </div>
                   <span className="text-gray-300 text-sm group-hover:text-white transition-colors">shyam8patidar@gmail.com</span>
                 </div>
-                
+
                 <div className="flex items-start group">
                   <div className="w-8 h-8 bg-purple-600/20 rounded-lg flex items-center justify-center mr-3 mt-0.5 group-hover:bg-purple-600/30 transition-colors">
                     <svg className="w-4 h-4 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1376,13 +1481,13 @@ export default function Home() {
                 Connect With Us
               </h4>
               <p className="text-gray-300 text-sm leading-relaxed">Get instant support and connect with our team on WhatsApp for quick assistance.</p>
-              
-              <button 
+
+              <button
                 onClick={() => window.open('https://wa.me/916263662870?text=Hi%20Shreem%20Software%20Solutions,%20I%20am%20interested%20in%20your%20school%20management%20software%20trial.', '_blank')}
                 className="w-full bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white px-4 py-3 rounded-xl font-semibold transition-all duration-300 flex items-center justify-center shadow-lg hover:shadow-xl transform hover:-translate-y-1 cursor-pointer"
               >
                 <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.149-.67.149-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.371-.025-.521-.075-.149-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414-.074-.123-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.149-.67.149-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.371-.025-.521-.075-.149-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414-.074-.123-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
                 </svg>
                 WhatsApp Support
               </button>
